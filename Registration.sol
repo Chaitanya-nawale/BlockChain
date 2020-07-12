@@ -49,6 +49,10 @@ contract Registration {
         chairperson = _authority;
     }
     
+    function getChairpersonName() validateAuthority(msg.sender) public view returns (string memory) {
+        return person[chairperson].name;
+    }
+    
     function getAuthorityName(address _authority) validateAuthority(_authority) public view returns (string memory){
         return person[_authority].name;
     }
