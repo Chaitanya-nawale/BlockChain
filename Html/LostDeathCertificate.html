@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lost Death Certificate Application</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+	<h1>Apply for Lost Death Certificate</h1>
+	<p><strong>Please fill following details for lost Death certificate application</strong></p>
+	<form action="Submitted.html" method="GET" >
+		<div>Previous Hash :
+			<div>
+				<label for = "_hash">Hash value of the Death certificate :</label>
+				<input type="text" id = "_hash" name = "_hash" required placeholder="Hash value of the Death certificate">
+			</div>
+		</div>
+		<br>
+		<div>Name :
+			<br>
+			<div>
+				<label for = "_name">Name of the child :</label>
+				<input type="text" id = "_name" name = "_name" required placeholder="Full name of the child">
+			</div>
+			<br>
+			<div>
+				<label for = "_namef">Name of the father :</label>
+				<input type="text" id = "_namef" name = "_namef" required placeholder="Full name of the father">
+			</div>
+			<br>
+			<div>
+				<label for = "_namem">Name of the mother :</label>
+				<input type="text" id = "_namem" name = "_namem" required placeholder="Full name of the mother">
+			</div>
+		</div>
+		<br>
+		<br>
+		<div> Death Information :
+			<div>
+			<label for="_dob">Date of Death :</label>
+			<input type="date" name="_dob" id="_dob" required>
+			</div>
+			<br>
+			<div>
+				<label for="_tob">Time of Death :</label>
+				<input type="text" id = "_tob" name="_tob" required>
+			</div>
+			<br>
+			<div>
+				<label for= "_pob">Place of Death :</label>
+				<input type="text" id = "_pob" name="_pob" required>
+			</div>
+			<br>
+			<div>
+			<label for="_gender">Gender :</label>
+			<select name="_gender" id="_gender" required >
+				<option label="Male"value="male"></option>
+				<option label="Female" value="female"></option>
+			</select>
+			</div>
+		</div>
+		<br>
+		<br>
+		<div>Contact Information :
+			<div>
+				<label for="_phone">Phone number :</label>
+				<input type="tel" name="_phone" id="_phone" required>
+			</div>
+			<br>
+			<div>
+				<label for="_mail">Email id :</label>
+				<input type="email" name="_mail" id="_mail">
+			</div>
+			<br>
+			<div>
+				<label for = "_padd"> Permanent address :</label>
+				<textarea id = "_padd" name = "_padd"></textarea>
+			</div>
+		</div>
+		<button type="reset">Reset</button>
+		<button type="submit">Submit</button>
+	</form>
+</body>
+</html>
